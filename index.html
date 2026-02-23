@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
-    <!-- Other meta tags, CSS links, or scripts go here -->
-</head>
-<body>
-    <!-- The visible content of the page (text, images, links, etc.) goes here -->
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unblocked Games</title>
+        <!-- Other meta tags, CSS links, or scripts go here -->
+    </head>
+    <body>
+        <div class="header" id="myHeader">
+            <h2>My Header</h2>
+        </div>
+    
+        <!-- The visible content of the page (text, images, links, etc.) goes here -->
+        <h1>This is a Heading</h1>
+        <p>This is a paragraph.</p>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+        </script>
+    </body>
 </html>
